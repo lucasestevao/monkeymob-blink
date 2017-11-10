@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Monkey Mob logo using CSS3</title>
+
+		<meta name="description" content="Monkey Mob logo using CSS3">
+		<meta name="author" content="Lucas Estevão">
+
+		<link rel="icon" type="image/x-icon" href="http://monkeymob.com.br/css/images/favicon.ico" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<style type="text/css">
+            #monkeymob {
+                position: absolute;
+            }
+
+            .container {
+                position: relative;
+            }
+
+            /* ===== HEAD ===== */
+
+            .hold-head {
+                position: relative;
+                height: 426px;
+                left: 57px;
+            }
+
+            .hold-face {
+                border-radius: 49% 49% 49% 49%;
+                background-color: #000;
+                height: 267px;
+                width: 328px;
+            }
+
+            .head-middle,
+            .head-left,
+            .head-right {
+                background-color: #FFF;
+                position: relative;
+            }
+
+            .head-left,
+            .head-right {
+                z-index: 1;
+                top: 67px;
+                float: left;
+                height: 106px;
+                width: 123px;
+            }
+
+            .head-middle {
+                z-index: 0;
+                position: absolute;
+                border-radius: 0 0 44% 44%;
+                height: 103px;
+                width: 167px;
+                top: 139px;
+                left: 80px;
+                background-color: #FFF;
+            }
+
+            .head-left {
+                border-radius: 54% 51% 54% 51%;
+                left: 47px;
+            }
+
+            .head-right {
+                border-radius: 51% 54% 51% 54%;
+                left: 34px;
+            }
+
+            /* ===== EARS ===== */
+
+            .ear {
+                background-color: #000;
+                position: absolute;
+                z-index: 3;
+                top: 50px;
+                height: 167px;
+                width: 104px;
+                border-radius: 51%;
+            }
+
+            .ear-left {
+                left: -57px;
+            }
+
+            .ear-right {
+                left: 281px;
+            }
+
+            /* ===== EYES ===== */
+
+            .eye-left,
+            .eye-right {
+                background-color: #000;
+                border-radius: 50%;
+                height: 34px;
+                width: 34px;
+                overflow: hidden;
+                position: absolute;
+                top: 37px;
+            }
+
+            .eye-left {
+                left: 49px;
+            }
+
+            .eye-right {
+                right: 49px;
+            }
+
+            .iris-left,
+            .iris-right {
+                background-color: #FFF;
+                border-radius: 50%;
+                height: 11px;
+                position: absolute;
+                top: 38px;
+                width: 11px;
+
+                /* animation */
+                -webkit-animation: blink 3s infinite step-start 0s;
+                -moz-animation: blink 3s infinite step-start 0s;
+                -ms-animation: blink 3s infinite step-start 0s;
+                -o-animation: blink 3s infinite step-start 0s;
+                animation: blink 3s infinite step-start 0s;
+            }
+
+            .iris-left {
+                right: 41px;
+            }
+
+            .iris-right {
+                left: 61px;
+            }
+
+            /* ===== ANIMATIONS - BLINK ===== */
+
+            @-webkit-keyframes blink {
+                0%, 100% {
+                    opacity: 0;
+                }
+
+                15%, 95% {
+                    opacity: 1;
+                }
+            }
+
+            @-moz-keyframes blink {
+                0%, 100% {
+                    opacity: 0;
+                }
+
+                15%, 95% {
+                    opacity: 1;
+                }
+            }
+
+            @-o-keyframes blink {
+                0%, 100% {
+                    opacity: 0;
+                }
+
+                15%, 95% {
+                    opacity: 1;
+                }
+            }
+
+            @-ms-keyframes blink {
+                0%, 100% {
+                    opacity: 0;
+                }
+
+                15%, 95% {
+                    opacity: 1;
+                }
+            }
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="hold-head">
+				<div class="ear ear-left"></div>
+				<div class="hold-face">
+					<div class="head-left">
+						<div class="eye-left"></div>
+						<div class="iris-left"></div>
+					</div>
+					<div class="head-middle"></div>
+					<div class="head-right">
+						<div class="eye-right"></div>
+						<div class="iris-right"></div>
+					</div>
+				</div>
+				<div class="ear ear-right"></div>
+			</div>
+		</div>
+	</body>
+</html>
